@@ -1,0 +1,41 @@
+{
+  "name": "php",
+  "version": "8.4",
+  "dependencies": [
+    "libjpeg-turbo",
+    "libavif",
+    {
+      "name": "libavif",
+      "features": [ "aom" ]
+    },
+    "aom",
+    "libyuv",
+    "libpng",
+    "libwebp",
+    "libxpm",
+    "freetype",
+    
+    "libzip",
+    "zlib",
+    "sqlite3",
+    "icu",
+    "bzip2",
+    "curl",
+    {
+      "name": "curl",
+      "features": [ "tool", "openssl" ]
+    },
+    "libssh2",
+    "nghttp2",
+    "openssl",
+    {
+      "name": "openssl",
+      "features": [ "tools" ]
+    },
+    "tidy-html5",
+    "freetds",
+    "libpq",
+    "argon2",
+    "lmdb"
+  ]
+}
