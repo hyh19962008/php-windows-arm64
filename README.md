@@ -5,6 +5,8 @@ Tested on:
 Windows 11(24H2 26100) + Visual Studio 2022 ARM64 + Windows SDK 20348
 
 ## 1. Dependencies
+Prebuilt libraries are here: [releases/tag/Dependencies](https://github.com/hyh19962008/php-windows-arm64/releases/tag/Dependencies)
+
 ### 1.0 vcpkg
 Many dependecies can be installed via vcpkg.
 - vcpkg new --name php --version 8.4
@@ -163,6 +165,14 @@ Disable these statements in php-8.4.6\ext\gd\libgd\gd_interpolation.c, they only
 ```c
 # pragma optimize("t", on)
 # include <emmintrin.h>
+```
+
+### 2.6 Zend (php >= 8.4.7)
+Limit this section to X64 Platform.
+```c
+#if defined(_WIN64) && defined(_M_X64)
+/* See save_xmm_x86_64_ms_masm.asm */
+void execute_ex_real(zend_execute_data *ex)
 ```
 
 ## 3. Building
