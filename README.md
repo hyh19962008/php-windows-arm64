@@ -168,7 +168,7 @@ Disable these statements in php-8.4.6\ext\gd\libgd\gd_interpolation.c, they only
 ```
 
 ### 2.6 Zend (php >= 8.4.7)
-Limit this section to X64 Platform.
+Limit this section to X64 platform in php-8.4.7\Zend\zend_vm_execute.h.
 ```c
 #if defined(_WIN64) && defined(_M_X64)
 /* See save_xmm_x86_64_ms_masm.asm */
