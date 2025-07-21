@@ -180,7 +180,7 @@ Follow this tutorial [Build your own PHP on Windows](https://wiki.php.net/intern
 ### 3.1 php-sdk
 The phpsdk_deps won't work, because the php team haven't built depedencies for windows arm64. The Second thing is you need this file `php-sdk\phpsdk-vs17-arm64.bat` in this repository.
 ### 3.2 php-src
-php 8.4.7 and php 8.4.8 can't produce a minimal build, so I'm sticking to php 8.4.6.
+php >= 8.4.7 should apply the changes in 2.6.
 ### 3.3 start building
 `--enable-snapshot-build` will try to enable everything, make `--with-extra-includes` and `--with-extra-libs` point to the vcpkg dirs.
 ```
